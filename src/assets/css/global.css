@@ -1,0 +1,32 @@
+@import "./variables.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Avenir, sans-serif;
+}
+
+body {
+	height: 100vh;
+	background: var(--secondary);
+}
+
+/* Form control */
+.form-control {
+	padding: 0.5rem 0.4rem;
+	outline: none;
+	border: 1px solid var(--gray);
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	transition: border 0.2s ease-in-out;
+}
+
+.form-control:focus,
+.form-control:active {
+	border-color: var(--dark100);
+}
+
+.form-control.error {
+	border-color: var(--primary);
+}
